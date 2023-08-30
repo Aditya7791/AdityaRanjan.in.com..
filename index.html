@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raksha Bandhan Greeting</title>
+  <style>
+   body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-image: url("https://github.com/Aditya7791/AdityaRanjan/blob/main/Photo%20by%20Patrick%20Schneider%20on%20Unsplash.jpeg?raw=true");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .animation-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+      animation: gradientAnimation 15s ease infinite;
+      background-size: 300% 300%;
+    }
+
+    .sweet {
+      position: absolute;
+      transform-origin: center;
+      animation: moveSweet 15s linear infinite;
+      border-radius: auto;
+    }
+
+    .gift {
+      position: absolute;
+      transform-origin: center;
+      animation: moveGift 10s linear infinite;
+      border-radius: auto;
+    }
+
+    @keyframes moveSweet {
+      0% { transform: translateX(-100px) rotate(0); }
+      100% { transform: translateX(calc(100% + 100px)) rotate(360deg); }
+    }
+
+    @keyframes moveGift {
+      0% { transform: translateX(-200px) rotate(0); }
+      100% { transform: translateX(calc(100% + 200px)) rotate(-360deg); }
+    }
+
+    /* Additional styling for the card */
+    .card {
+      position: relative;
+      max-width: 90%;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    p {
+      color: #555;
+    }
+
+    .btn-container {
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff6b6b;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ff4f4f;
+    }
+
+    .scrollable-container {
+      overflow-y: scroll;
+      max-height: calc(100vh - 100px); /* Adjusted for footer height and margins */
+      padding: 20px;
+    }
+
+    .player-container {
+      width: 100%;
+      text-align: center;
+      background-color: #e9d8eb;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    audio {
+      width: 100%;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: transparent;
+      color: #000000;
+      text-align: center;
+      padding: 10px 0;
+      border-top: 2px solid #fff;
+      box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="animation-container"></div>
+  <div class="animation-container">
+    <img src="https://github.com/Aditya7791/AdityaRanjan/blob/main/pngwing.com.png?raw=true" alt="Sweet" class="sweet">
+    <img src="https://github.com/Aditya7791/AdityaRanjan/blob/main/SFFDGDG.png?raw=true" alt="Gift" class="gift">
+  </div>
+  <div class="scrollable-container">
+    <div class="card">
+      <img src="https://github.com/Aditya7791/AdityaRanjan/blob/main/r0001.jpg?raw=true" alt="Raksha Bandhan">
+      <div class="card-content">
+        <h1>Happy Raksha Bandhan!</h1>
+        <p>May the bond of love and protection between siblings be as strong as ever.</p>
+        <div class="btn-container">
+          <a href="whatsapp://send?text=https://aditya7791.github.io/AdityaRanjan./" class="btn btn-whatsapp">Send Wishes</a>
+        </div>
+      </div>
+    </div>
+    <div class="player-container">
+      <h2>Grooving Along....</h2>
+      <audio id="audio-player" controls>
+        <source src="https://github.com/Aditya7791/AdityaRanjan/raw/main/zxse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+  <div class="footer">
+    Copyright © [30Aug-2023], Designed by [Aditya Ranjan]
+  </div>
+</body>
+</html>
